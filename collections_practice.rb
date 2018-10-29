@@ -8,7 +8,7 @@ def sort_array_desc(stuff)
 end
 
 def sort_array_char_count(stuff)
-  stuff.length
-  stuff.sort
-  new = stuff
+  stuff.sort do |left, right|
+    left.length <=> right.length
+  end
 end
